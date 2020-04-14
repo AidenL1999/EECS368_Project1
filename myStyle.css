@@ -1,0 +1,64 @@
+body
+{
+    background-image: url('1.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+ 
+ .piece {
+     /* set piece squares */
+     height: 40px;
+     width: 40px;
+     display:block;
+     border-radius: 20px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ 
+ 
+ .Boardsquare {
+     /* set the border for each square */
+     border: 1px solid #555555;
+     height: 44px;
+     width: 44px;
+ }
+
+.player0 {
+    /* No player */
+    background-color: gray;
+}
+
+
+.player1 {
+    background-color: yellow;
+}
+
+
+.player2 {
+    background-color: red;
+}
+
+h1
+{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+h3
+{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+}
+
+a
+{
+    color: darkcyan;
+    font-size: larger;
+}

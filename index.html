@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <h1>EECS368 Project1</h1>
+    <title>Connect Four(PVP)</title>
+    <script src="connect_four.js"></script>
+
+    </head>
+    
+    <body onload="resetGame();">
+        <h1>Connect Four(PVP)</h1>
+        <div id="gameboard">
+            <div id="information"></div>
+            <table id="Gametable">
+            <thead>
+                <tr>
+                    <td><button onclick="PlaceDisc(0);">Place</button></td>
+                    <td><button onclick="PlaceDisc(1);">Place</button></td>
+                    <td><button onclick="PlaceDisc(2);">Place</button></td>
+                    <td><button onclick="PlaceDisc(3);">Place</button></td>
+                    <td><button onclick="PlaceDisc(4);">Place</button></td>
+                    <td><button onclick="PlaceDisc(5);">Place</button></td>
+                    <td><button onclick="PlaceDisc(6);">Place</button></td>
+                </tr>
+            </thead>
+            <script>
+                /*document.writeln() function will write HTML code to the browser. */
+            for (var row=0; row<=5; row++) {
+                    document.writeln("<tr>");
+                    for (var col=0; col<=6; col++) {
+                    document.writeln("<td id='square_" + row + "_"+ col +"' class='Boardsquare'></td>");
+                    }document.writeln("</tr>");
+                    }
+            </script>
+            </table>
+            <br><button id="begin_game" onclick="resetGame();">Reset Game (only after the game is done)</button><br><br>
+            <h3>Link to the js, html and css file: </h3><a href="https://github.com/AidenL1999/EECS368_Project1">Github </a>
+            <div id="Gamestatus">
+            </div>
+        </div>
+    </body>
+    
+    <link href="myStyle.css" rel="stylesheet" />
+    
+</html>
